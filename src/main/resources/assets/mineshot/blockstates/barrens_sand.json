@@ -1,0 +1,15 @@
+{
+	"variants": {
+	"": [
+		{"model": "mineshot:block/barrens_sand_1"},
+		{"model": "mineshot:block/barrens_sand_2"},
+		{"model": "mineshot:block/barrens_sand_3"},
+		{"model": "mineshot:block/barrens_sand_4"},
+		{"model": "mineshot:block/barrens_sand_5"},
+		{"model": "mineshot:block/barrens_sand_6"},
+		{"model": "mineshot:block/barrens_sand_7"},
+		{"model": "mineshot:block/barrens_sand_8"},
+		{"model": "mineshot:block/barrens_sand_9"}
+		]
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "mineshot:item/pond_water_bottle"
+	}
+}

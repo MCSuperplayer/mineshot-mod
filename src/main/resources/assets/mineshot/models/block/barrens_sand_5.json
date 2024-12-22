@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/cube_all",
+	"textures": {
+		"all": "mineshot:block/barrens_sand_5"
+	}
+}
