@@ -65,6 +65,9 @@ public class TextEngineCommand {
 			textengine.putString("display", display);
 			textengine.putString("message", message);
 
+			textengine.putInt("index", 1);
+			textengine.putInt("delay", 0);
+
 			textengine.putBoolean("runText", true);
 
 			mineshotData.put("textengine", textengine);
