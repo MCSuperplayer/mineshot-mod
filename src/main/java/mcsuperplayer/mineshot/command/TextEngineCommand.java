@@ -13,16 +13,37 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 
 public class TextEngineCommand {
+
+	public enum voicetype {
+		PERSON("person"), ROBOT("robot"), SILENT("silent");
+
+		public final String type;
+
+		voicetype(String type) {
+			this.type = type;
+		}
+	}
+
+	public enum displaytype {
+		TITLE("title"), SUBTITLE("subtitle"), HOTBAR("hotbar");
+
+		public final String display;
+
+		displaytype(String display) {
+			this.display = display;
+		}
+	}
+
 	public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
 		LiteralArgumentBuilder<CommandSourceStack> command = Commands.literal("textengine")
 				.requires(source -> source.hasPermission(0))
 				.then(Commands.argument("voice", StringArgumentType.word())
 					.suggests((context, builder) -> {
-						return SharedSuggestionProvider.suggest(new String[] {"silent", "person", "robot"}, builder);
+						return SharedSuggestionProvider.suggest(new String[] {voicetype.PERSON.type, voicetype.ROBOT.type, voicetype.SILENT.type}, builder);
 					})
 				.then(Commands.argument("display",StringArgumentType.word())
 					.suggests((context, builder) -> {
-						return SharedSuggestionProvider.suggest(new String[] {"title", "subtitle", "hotbar"}, builder);
+						return SharedSuggestionProvider.suggest(new String[] {displaytype.HOTBAR.display, displaytype.TITLE.display, displaytype.SUBTITLE.display}, builder);
 					})
 				.then(Commands.argument("message",StringArgumentType.greedyString())
 				.executes(TextEngineCommand::execute))));
@@ -76,4 +97,8 @@ public class TextEngineCommand {
 			return 1;
 	}
 
+	public static String textengineCommandString(voicetype voice, displaytype display, String message) {
+		return String.join(" ", "textengine", voice.type, display.display, message);
+
+	}
 }

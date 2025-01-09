@@ -16,7 +16,8 @@ public class Config {
 //            .define("logDirtBlock", true);
 //
 	private static final ForgeConfigSpec.IntValue TEXTENGINE_DELAY = BUILDER
-			.comment("Delay in ticks between Letters written by the text engine.")
+			.comment(
+					"Delay in ticks between Letters written by the text engine. If you want to change it for whatever reason.")
 			.defineInRange("textengineDelay", 1, 0, 20);
 
 //    public static final ForgeConfigSpec.ConfigValue<String> MAGIC_NUMBER_INTRODUCTION = BUILDER

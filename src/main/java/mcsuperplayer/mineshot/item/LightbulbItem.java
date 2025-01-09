@@ -8,9 +8,8 @@ import net.minecraft.world.level.Level;
 
 public class LightbulbItem extends MineShotItem {
 
-	public LightbulbItem(Properties pProperties) {
-		super(pProperties);
-		// TODO Auto-generated constructor stub
+	public LightbulbItem(Properties properties) {
+		super(properties);
 	}
 
 	@Override

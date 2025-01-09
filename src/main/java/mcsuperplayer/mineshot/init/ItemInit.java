@@ -69,7 +69,7 @@ public class ItemInit {
 	public static final RegistryObject<Item> ITEM_BATTERY_EMPTY = ITEMS.register("empty_battery",
 			() -> new MineShotItem(new Item.Properties().fireResistant()));
 
-	public static final RegistryObject<Item> ITEM_BAATTERY_CHARGED = ITEMS.register("charged_battery",
+	public static final RegistryObject<Item> ITEM_BATTERY_CHARGED = ITEMS.register("charged_battery",
 			() -> new MineShotItem(new Item.Properties().fireResistant()));
 
 	public static final RegistryObject<Item> ITEM_SMOKE_BOTTLE = ITEMS.register("smoke_bottle",

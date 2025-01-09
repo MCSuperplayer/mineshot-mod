@@ -46,7 +46,6 @@ public class MineShotData extends SavedData {
 
 	@Override
 	public CompoundTag save(CompoundTag tag) {
-		// TODO Auto-generated method stub
 		tag.putString("remoteCode", remoteCode);
 		return tag;
 	}

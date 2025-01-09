@@ -12,9 +12,8 @@ import net.minecraft.world.level.Level;
 
 public class RemoteItem extends MineShotItem {
 
-	public RemoteItem(Properties p_41383_) {
-		super(p_41383_);
-		// TODO Auto-generated constructor stub
+	public RemoteItem(Properties properties) {
+		super(properties);
 	}
 
 	@Override
