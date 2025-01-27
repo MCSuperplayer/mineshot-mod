@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_top",
+  "textures": {
+    "side": "mineshot:block/glen_dirt",
+    "top": "mineshot:block/glen_grass_block"
+  }
+}
