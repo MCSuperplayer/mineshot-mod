@@ -259,4 +259,18 @@ public class ItemInit {
 					.rarity(Rarity.EPIC)
 					.stacksTo(1)
 			));
+	public static final RegistryObject<BlockItem> BLOCKITEM_TV_REMOTE_BLOCK = BLOCK_ITEMS.register("tv_remote_block",
+			() -> new BlockItem(BlockInit.TV_REMOTE_BLOCK.get(), new Item.Properties()));
+
+	public static final RegistryObject<BlockItem> BLOCKITEM_POWER_CELL = BLOCK_ITEMS.register("power_cell",
+			() -> new BlockItem(BlockInit.POWER_CELL.get(), new Item.Properties()));
+
+	public static final RegistryObject<BlockItem> BLOCKITEM_GLEN_GRASS_BLOCK = BLOCK_ITEMS.register("glen_grass_block",
+			() -> new BlockItem(BlockInit.GLEN_GRASS_BLOCK.get(), new Item.Properties()));
+
+	public static final RegistryObject<BlockItem> BLOCKITEM_REFUGE_FLOOR = BLOCK_ITEMS.register("refuge_floor",
+			() -> new BlockItem(BlockInit.REFUGE_FLOOR.get(), new Item.Properties()));
+
+	public static final RegistryObject<BlockItem> BLOCKITEM_WITHERED_PLANT = BLOCK_ITEMS.register("withered_plant",
+			() -> new BlockItem(BlockInit.WITHERED_PLANT.get(), new Item.Properties()));
 }
