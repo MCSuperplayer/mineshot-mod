@@ -30,19 +30,20 @@ public class BlockInit {
 					.dynamicShape()
 					.lightLevel(state -> ComputerBlock.getLightLevel(state))
 					.strength(-1)
+					.emissiveRendering((pState, pBlockGetter, pBlockPos) -> true)
 			));
 
 	public static final RegistryObject<Block> GLEN_GRASS_BLOCK = BLOCKS.register("glen_grass_block",
 			() -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)
 					.mapColor(DyeColor.GREEN)
-					.lightLevel(state -> 5)
+					.lightLevel(state -> 7)
 					.strength(-1)
 			));
 	
 	public static final RegistryObject<Block> REFUGE_FLOOR = BLOCKS.register("refuge_floor",
 			() -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)
 					.mapColor(DyeColor.RED)
-					.lightLevel(state -> 5)
+					.lightLevel(state -> 3)
 					.strength(-1)
 			));
 

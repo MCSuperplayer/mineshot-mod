@@ -125,9 +125,9 @@ public class ComputerBlock extends HorizontalDirectionalBlock implements EntityB
 	public static int getLightLevel(BlockState state) {
 		if(state.hasProperty(TYPE)) {
 			if (state.getValue(TYPE) == COMPUTERTYPE.OFF) {
-				return 0;
+				return 1;
 			}
-			return 5;
+			return 9;
 		}
 		return 0;
 	}
