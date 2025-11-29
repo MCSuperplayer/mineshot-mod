@@ -1,4 +1,4 @@
-{	//items
+{	//Items
 	"item.mineshot.lightbulb": "Lightbulb",
 	"item.mineshot.lightbulb_desc": "A large lightbulb. It's the sun.",
 	"item.mineshot.remote": "Television Remote",
@@ -145,7 +145,7 @@
 	"item.mineshot.music_box_desc": "A wind-up music box",
 	
 	
-	//Blocks
+	//Blocks,
 	"block.mineshot.barrens_sand": "Barrens Sand",
 	"block.mineshot.computer": "Computer",
 	
@@ -161,5 +161,11 @@
 	
 	
 	//Texts
-	"text.mineshot.textengine.invalid_command": "Invalid Argument: "
+	"text.mineshot.textengine.invalid_command": "Invalid Argument: ",
+	"text.mineshot.dialogue.ready_branch": "[Niko readies the branch...]",
+	"text.mineshot.dialogue.torch_ah": "Ah!",
+	"text.mineshot.dialogue.batterybox_open": "This bar should open it.",
+	"text.mineshot.dialogue.batterybox_contents": "There's a little metal cube and some broken glass in here...",
+	"text.mineshot.dialogue.batterybox_contents2": "Looks like what used to be a machine part.",
+	"text.mineshot.dialogue.batterybox_contents3": "It says 'Solar Battery' on the side."
 }
